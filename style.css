@@ -576,7 +576,12 @@ address div {
   .cart-btn i {
     font-size: 2rem;
   }
-
+  #home{
+    background-image: url(assets/77.png) !important;
+  }
+  #home p{
+      /* color: #0f9d58; */
+  }
   .about {
     background-image: url(assets/6.jpg);
     background-attachment: fixed;
