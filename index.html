@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="sendMail.js"></script>
 </head>
 
 <body>
@@ -441,8 +443,7 @@
 
                 <div class="col-xs-12 col-8">
                     <h3>Đăng ký nhận thông tin</h3>
-                    <form name="contactForm" id='contact_form' method="post"
-                        action='http://www.themenesia.com/themeforest/archi-light/email.php'>
+                    <form name="contactForm" id='contact_form' method="post" action='javascript:sendEmail();'>
                         <div class="row">
                             <div class="col-4 col-xs-12">
                                 <!-- <div id='name_error' class='error'>Please enter your name.</div> -->

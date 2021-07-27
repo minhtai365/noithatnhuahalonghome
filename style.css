@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #0f9d58;
+  /* --primary-color: #0f9d58; */
+  --primary-color: #00adef;
   --background-color: #f0f3f7;
   --secon-color: #9da2ad;
   --grey: #7a7a7b;
@@ -576,11 +577,11 @@ address div {
   .cart-btn i {
     font-size: 2rem;
   }
-  #home{
+  #home {
     background-image: url(assets/77.png) !important;
   }
-  #home p{
-      /* color: #0f9d58; */
+  #home p {
+    /* color: #0f9d58; */
   }
   .about {
     background-image: url(assets/6.jpg);
@@ -618,8 +619,8 @@ address div {
   }
 
   /* MOBILE NAV */
-  .footer-center{
-      text-align: center;
+  .footer-center {
+    text-align: center;
   }
   .mb-nav {
     position: fixed;
