@@ -5,10 +5,10 @@ function sendEmail() {
     var message = document.getElementById("message").value;
     Email.send({
         Host: "smtp.gmail.com",
-        Username: "<sender’s email address>",
-        Password: "<email password>",
+        Username: "halonghome.z2021z@gmail.com",
+        Password: "adminhalong",
         To: email,
-        From: "<sender’s email address>",
+        From: "halonghome.z2021z@gmail.com",
         Subject: "Thông báo đăng ký nhận thông tin thành công",
         Body: '<div>Chào bạn : ' + name +
             '</div><p> Thông báo bạn đã đăng ký nhận thông tin mới thành công </b><ul><li>Email:'
