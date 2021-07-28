@@ -46,12 +46,6 @@ html {
   padding: 1rem;
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--primary-color);
-}
-
 .menu {
   display: flex;
   align-items: center;
@@ -128,7 +122,7 @@ section {
 }
 
 .slogan h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   color: var(--primary-color);
 }
 
@@ -555,6 +549,16 @@ address div {
   border: 1px solid #4322;
   outline: none;
 }
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  height: 50px;
+}
+.logo img {
+  width: 1px !important;
+  height: 100%;
+}
 @media only screen and (max-width: 992px) {
   .about-slogan.start {
     transform: translateX(0) !important;
@@ -579,9 +583,6 @@ address div {
   }
   #home {
     background-image: url(assets/77.png) !important;
-  }
-  #home p {
-    /* color: #0f9d58; */
   }
   .about {
     background-image: url(assets/6.jpg);
