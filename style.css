@@ -573,6 +573,9 @@ address div {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1012px) {
+  .fb_customer_chat_icon {
+    top: 75% !important;
+  }
   * {
     font-size: 13px;
   }
@@ -803,13 +806,33 @@ address div {
 .support-content {
   display: none;
 }
+a.call-now {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 25px;
+  bottom: 220px;
+  z-index: 999;
+  text-decoration: none;
+}
+a.mess-now {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 25px;
+  bottom: 150px;
+  z-index: 999;
+  text-decoration: none;
+}
 a.icon-chatzalo {
   display: block;
   width: 40px;
   height: 40px;
   position: fixed;
-  right: 15px;
-  bottom: 200px;
+  right: 50px;
+  bottom: 170px;
   z-index: 999;
   text-decoration: none;
 }
