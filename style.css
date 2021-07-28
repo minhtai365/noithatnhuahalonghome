@@ -100,7 +100,9 @@ html {
   justify-content: center;
   text-align: center;
 }
-
+.text-center {
+  text-align: center;
+}
 .bg-img {
   background-position: center;
   background-size: cover;
@@ -110,7 +112,12 @@ html {
 .bg-img-fixed {
   background-attachment: fixed;
 }
-
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .container {
   width: 100%;
   max-width: 1366px;
@@ -118,7 +125,7 @@ html {
 }
 
 section {
-  padding: 9rem 0;
+  padding: 5rem 0;
 }
 
 .slogan {
@@ -129,7 +136,24 @@ section {
   font-size: 5rem;
   color: var(--primary-color);
 }
-
+.is-regis {
+  padding: 0 !important;
+}
+.text-submit {
+  text-align: center;
+}
+.text-submit input {
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border: 0.125rem solid var(--primary-color);
+}
 .slogan button {
   padding: 1rem 5rem;
   outline: none;
@@ -144,7 +168,8 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-.slogan button:hover {
+.slogan button:hover,
+.text-submit input:hover {
   background-color: var(--primary-color);
   color: var(--white);
 }
@@ -542,17 +567,9 @@ address div strong {
   color: #fab702;
 }
 address div {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
-.text-submit {
-  text-align: center;
-}
-.text-submit input {
-  padding: 5px 20px;
-  border-radius: 20px;
-  border: 1px solid #4322;
-  outline: none;
-}
+
 .logo {
   margin-left: 30px;
   font-size: 1.5rem;
@@ -571,6 +588,10 @@ address div {
 }
 .text-strong {
   font-size: 22px !important;
+  font-weight: bold;
+}
+.text-light {
+  color: white;
 }
 /* .fb_customer_chat_icon {
   bottom: 130px !important;
@@ -580,6 +601,7 @@ address div {
     transform: translateX(0) !important;
   }
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1012px) {
   * {
@@ -590,17 +612,21 @@ address div {
     font-size: 3rem !important;
   }
   .logo h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
   }
   span {
     font-size: inherit;
   }
-
+  .m-text-light {
+    color: white;
+  }
   .cart-btn i {
     font-size: 2rem;
   }
-  #home {
-    background-image: url(assets/77.png) !important;
+  #home > .position-absolute {
+    background-image: url(assets/type34.jpg) !important;
+    filter: blur(4px);
+    background-position: initial;
   }
   .about {
     background-image: url(assets/4.jpg);
@@ -738,8 +764,18 @@ address div {
   .h-xs {
     display: none;
   }
+  .logo img {
+    width: 70px !important;
+    height: 80%;
+    margin-left: 15px;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 1rem !important;
+  }
+}
 /* support */
 
 .support-online {

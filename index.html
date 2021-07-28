@@ -140,8 +140,10 @@
     </div>
     <!-- END TOP NAVIGATION -->
     <!-- SECTION HOME -->
-    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed"
-        style="background-image: url(assets/10.png);">
+    <section id="home">
+        <div class="fullheight align-items-center bg-img bg-img-fixed position-absolute"
+            style="background-image: url(assets/10.png);">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-6 col-xs-12">
@@ -149,7 +151,7 @@
                         <h1 class="left-to-right play-on-scroll">
                             Hạ Long Home
                         </h1>
-                        <p class="left-to-right play-on-scroll delay-2">
+                        <p class="left-to-right play-on-scroll delay-2 m-text-light">
                             Trải qua hành trình 10 năm đồng hành xây dựng không gian sống hiện đại, Nội Thất Hạ Long
                             Home
                             đã tạo ra
@@ -585,7 +587,7 @@
     </section>
     <!-- END FOOD MENU SECTION -->
     <!-- TESTIMONIAL SECTION -->
-    <section id="contact" style="background-image: url(assets/77.png);">
+    <section id="contact" style="background-image: url(assets/bgcon.png);">
         <!-- <div class="container">
             <div class="row">
                 <div class="col-4 col-xs-12">
@@ -614,121 +616,67 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-xs-12">
-                    <div class="zoom play-on-scroll">
-                        <div class="review-wrap active">
-                            <div class="review-content">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
-                                    molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt
-                                    corrupti
-                                    dolores ratione voluptatibus quidem explicabo.
-                                </p>
-                                <div class="review-img bg-img"
-                                    style="background-image: url(assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);">
-                                </div>
-                            </div>
-                            <div class="review-info">
-                                <h3>
-                                    Lorem Ipsum Dolor
-                                </h3>
-                                <div class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-xs-12">
-                    <div class="review-wrap zoom play-on-scroll delay-4">
-                        <div class="review-content">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
-                                molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti
-                                dolores ratione voluptatibus quidem explicabo.
-                            </p>
-                            <div class="review-img bg-img"
-                                style="background-image: url(assets/portrait-happy-young-man_171337-21716.jpg);">
-                            </div>
-                        </div>
-                        <div class="review-info">
-                            <h3>
-                                Lorem Ipsum Dolor
-                            </h3>
-                            <div class="rating">
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                                <i class='bx bxs-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div> -->
 
         <div class="container">
-            <div class="row">
+            <div class="row text-light">
 
                 <div class="col-xs-12 col-8">
-                    <h3>Đăng ký nhận báo giá</h3>
-                    <form name="contactForm" id='contact_form' method="post" action='javascript:sendEmail();'>
-                        <div class="row">
-                            <div class="col-4 col-xs-12">
-                                <!-- <div id='name_error' class='error'>Please enter your name.</div> -->
-                                <div>
-                                    <input type='text' name='name' id='name' class="form-control" placeholder="Tên">
-                                </div>
+                    <div class=" zoom play-on-scroll delay-2">
+                        <h3>Đăng ký nhận báo giá</h3>
+                        <form name="contactForm" id='contact_form' method="post" action='javascript:sendEmail();'>
+                            <div class="row">
+                                <div class="col-4 col-xs-12">
+                                    <!-- <div id='name_error' class='error'>Please enter your name.</div> -->
+                                    <div>
+                                        <input type='text' name='name' id='name' class="form-control" placeholder="Tên">
+                                    </div>
 
-                                <!-- <div id='email_error' class='error'>Please enter your valid E-mail ID.</div> -->
-                                <!-- <div>
+                                    <!-- <div id='email_error' class='error'>Please enter your valid E-mail ID.</div> -->
+                                    <!-- <div>
                                     <input type='text' name='email' id='email' class="form-control" placeholder="Email">
                                 </div> -->
 
-                                <!-- <div id='phone_error' class='error'>Please enter your phone number.</div> -->
-                                <div>
-                                    <input type='text' name='phone' id='phone' class="form-control"
-                                        placeholder="Số điện thoại">
+                                    <!-- <div id='phone_error' class='error'>Please enter your phone number.</div> -->
+                                    <div>
+                                        <input type='text' name='phone' id='phone' class="form-control"
+                                            placeholder="Số điện thoại">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-8 col-xs-12">
-                                <!-- <div id='message_error' class='error'>Please enter your message.</div> -->
-                                <div>
-                                    <textarea name='message' id='message' class="form-control text-mess"
-                                        placeholder="Tin nhắn"></textarea>
+                                <div class="col-8 col-xs-12">
+                                    <!-- <div id='message_error' class='error'>Please enter your message.</div> -->
+                                    <div>
+                                        <textarea name='message' id='message' class="form-control text-mess"
+                                            placeholder="Tin nhắn"></textarea>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12">
-                                <p id='submit' class="text-submit">
-                                    <input type='submit' id='send_message' value='Đăng ký' class="btn btn-line">
-                                </p>
-                                <!-- <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                <div class="col-12 is-regis">
+                                    <p id='submit' class="text-submit">
+                                        <input type='submit' id='send_message' value='Đăng ký' class="btn btn-line">
+                                    </p>
+                                    <!-- <div id='mail_success' class='success'>Your message has been sent successfully.</div>
                                 <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div> -->
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="sidebar" class="col-4 col-xs-12">
-
-                    <div class="widget widget_text">
-                        <h3 class="contact-info">Thông tin liên hệ</h3>
-                        <address>
-                            <div>Số 500 Hà Lầm, Hạ Long, Quảng Ninh</div>
-                            <div><strong>Phone:</strong>(+84) 37.272.4444</div>
-                            <div><strong>Email:</strong><a
-                                    href="mailto:vudiepgt1995@gmail.com">vudiepgt1995@gmail.com</a></div>
-                            <!-- <div><strong>Web:</strong><a href="#test">vudiepgt1995@gmail.com</a></div> -->
-                            <div><strong>Open</strong>Sunday - Friday 06:00 - 22:00</div>
-                        </address>
+                    <div class=" zoom play-on-scroll delay-2">
+                        <div class="widget widget_text">
+                            <h3 class="contact-info">Thông tin liên hệ</h3>
+                            <address>
+                                <div>Số 500 Hà Lầm, Hạ Long, Quảng Ninh</div>
+                                <div><strong>Phone:</strong>(+84) 37.272.4444</div>
+                                <div><strong>Email:</strong><a
+                                        href="mailto:vudiepgt1995@gmail.com">vudiepgt1995@gmail.com</a></div>
+                                <!-- <div><strong>Web:</strong><a href="#test">vudiepgt1995@gmail.com</a></div> -->
+                                <div><strong>Open</strong>Sunday - Friday 06:00 - 22:00</div>
+                            </address>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -736,10 +684,10 @@
     </section>
     <!-- END TESTIMONIAL SECTION -->
     <!-- FOOTER SECTION -->
-    <section class="footer bg-img footer-center" style="background-image: url(assets/4.jpg);">
+    <section class="footer bg-img footer-center" style="background-image: url(assets/foot.png);">
         <div class="container">
-            <div class="row">
-                <div class="col-6 col-xs-12">
+            <div class="row ">
+                <div class="col-5 col-xs-12 ">
                     <h1>
                         Nội Thất Hạ Long Home
                     </h1>
@@ -749,7 +697,7 @@
                     <p>Phone: (+84) 37.272.4444</p>
                     <!-- <p>Website: freshfood.com</p> -->
                 </div>
-                <div class="col-2 col-xs-12">
+                <div class="col-2 col-xs-12 text-center">
                     <h1>
                         Menu
                     </h1>
@@ -791,7 +739,7 @@
                     </div>
                 </div> -->
 
-                <div class="col-4 col-xs-12">
+                <div class="col-5 col-xs-12">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.6464440628097!2d107.11145611493161!3d20.96670888603195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a57e4d0c7c50d%3A0x50bedebe3e0c996f!2zNTAwIEjDoCBM4bqnbSwgVGjDoG5oIHBo4buRIEjhuqEgTG9uZywgUXXhuqNuZyBOaW5o!5e0!3m2!1svi!2s!4v1627452254819!5m2!1svi!2s"
                         style="border:0; width: 100% ; height: 300px ;" allowfullscreen="" loading="lazy"></iframe>
