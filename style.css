@@ -562,7 +562,7 @@ address div {
   display: flex;
   align-items: center;
 }
-.logo h1{
+.logo h1 {
   font-size: 1.5rem;
 }
 .logo img {
@@ -570,7 +570,7 @@ address div {
   height: 100%;
 }
 .fb_customer_chat_icon {
-  top: 75% !important;
+  bottom: 140px !important;
 }
 @media only screen and (max-width: 992px) {
   .about-slogan.start {
@@ -586,7 +586,9 @@ address div {
   h1 {
     font-size: 3rem !important;
   }
-
+  .logo h1 {
+    font-size: 1.5rem !important;
+  }
   span {
     font-size: inherit;
   }

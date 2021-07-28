@@ -1,6 +1,6 @@
 function sendEmail() {
     var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+    var email = 'vudiepgt1995@gmail.com';
     var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
     Email.send({
@@ -9,13 +9,12 @@ function sendEmail() {
         Password: "adminhalong",
         To: email,
         From: "halonghome.z2021z@gmail.com",
-        Subject: "Thông báo đăng ký nhận thông tin thành công",
-        Body: '<div>Chào bạn : ' + name +
-            '</div><p> Thông báo bạn đã đăng ký nhận thông tin mới thành công </b><ul><li>Email:'
-            + email + '</li><li>Phone:' + phone +
-            '</li></ul><div>Chúng tôi sẽ gửi thông tin những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân đến bạn.</div>',
+        Subject: "Thông báo đăng ký nhận báo giá từ :" + name,
+        Body: '<div>Chào bạn Diệp :</div><p> Bạn đã nhận được đăng ký báo giá từ : </b><ul><li>Tên:'
+            + name + '</li><li>Phone:' + phone +
+            '</li></ul><div>Với lời nhắn : ' + message + '.</div><div>Cuối cùng, chúng tôi cảm ơn bạn đã tin tưởng sử dụng dịch vụ và chúc bạn thành công trông công việc</div>',
     }).then(
-        message => alert("mail sent successfully")
+        message => alert("Đăng ký thành công!!!")
     );
 }
 
