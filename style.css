@@ -811,8 +811,8 @@ a.call-now {
   width: 40px;
   height: 40px;
   position: fixed;
-  left: 25px;
-  bottom: 220px;
+  left: 35px;
+  bottom: 190px;
   z-index: 999;
   text-decoration: none;
 }
@@ -821,8 +821,8 @@ a.mess-now {
   width: 40px;
   height: 40px;
   position: fixed;
-  left: 25px;
-  bottom: 150px;
+  left: 35px;
+  bottom: 125px;
   z-index: 999;
   text-decoration: none;
 }
@@ -831,8 +831,8 @@ a.icon-chatzalo {
   width: 40px;
   height: 40px;
   position: fixed;
-  right: 50px;
-  bottom: 170px;
+  right: 35px;
+  bottom: 190px;
   z-index: 999;
   text-decoration: none;
 }
