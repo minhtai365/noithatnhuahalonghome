@@ -35,13 +35,13 @@ Array.from(categories).forEach((item, index) => {
         let currCat = foodCategory.querySelector('button.active')
         currCat.classList.remove('active')
         e.target.classList.add('active')
-        foodMenuList.classList ='food-item-wrap '+ e.target.getAttribute('data-food-type')
+        foodMenuList.classList = 'food-item-wrap ' + e.target.getAttribute('data-food-type')
     }
 })
 
 // on scroll animation
 
-let scroll = window.requestAnimationFrame || function(callback) {window.setTimeout(callback, 1000/60)}
+let scroll = window.requestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60) }
 
 let elToShow = document.querySelectorAll('.play-on-scroll')
 
@@ -86,4 +86,26 @@ bottomNavItems.forEach((item, index) => {
         bottomMove.style.left = index * 25 + '%'
     }
 })
+
+// facebokk mess
+// <!-- Messenger Plugin chat Code -->
+
+var chatbox = document.getElementById('fb-customer-chat');
+chatbox.setAttribute("page_id", "799194496830645");
+chatbox.setAttribute("attribution", "biz_inbox");
+
+window.fbAsyncInit = function () {
+    FB.init({
+        xfbml: true,
+        version: 'v11.0'
+    });
+};
+
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
