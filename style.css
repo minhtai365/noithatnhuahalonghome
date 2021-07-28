@@ -569,9 +569,12 @@ address div {
   width: 80px !important;
   height: 100%;
 }
-.fb_customer_chat_icon {
-  bottom: 130px !important;
+.text-strong {
+  font-size: 22px !important;
 }
+/* .fb_customer_chat_icon {
+  bottom: 130px !important;
+} */
 @media only screen and (max-width: 992px) {
   .about-slogan.start {
     transform: translateX(0) !important;
@@ -580,7 +583,7 @@ address div {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1012px) {
   * {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   h1 {
@@ -816,8 +819,8 @@ a.call-now {
   width: 40px;
   height: 40px;
   position: fixed;
-  left: 35px;
-  bottom: 205px;
+  right: 35px;
+  bottom: 140px;
   z-index: 999;
   text-decoration: none;
 }
@@ -827,7 +830,7 @@ a.mess-now {
   height: 40px;
   position: fixed;
   left: 35px;
-  bottom: 140px;
+  bottom: 90px;
   z-index: 999;
   text-decoration: none;
 }
