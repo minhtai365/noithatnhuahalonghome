@@ -87,7 +87,20 @@ bottomNavItems.forEach((item, index) => {
     }
 })
 
-// facebokk mess
+// suppost online
+$(document).ready(function () {
+    $('.support-content').hide();
+    $('a.btn-support').click(function (e) {
+        e.stopPropagation();
+        $('.support-content').slideToggle();
+    });
+    $('.support-content').click(function (e) {
+        e.stopPropagation();
+    });
+    $(document).click(function () {
+        $('.support-content').slideUp();
+    });
+});
 // <!-- Messenger Plugin chat Code -->
 
 var chatbox = document.getElementById('fb-customer-chat');
@@ -108,4 +121,7 @@ window.fbAsyncInit = function () {
     js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+
+
 
